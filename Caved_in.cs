@@ -10,13 +10,9 @@ namespace BaseProject
             screen = new Point(1920, 1080);
             ApplyResolutionSettings();
 
-            GameStateManager.AddGameState("StoryState", new StoryState());
-            GameStateManager.AddGameState("StartScreenState", new StartScreenState());
             GameStateManager.AddGameState("PlayingState", new PlayingState());
-            GameStateManager.AddGameState("GameOverState", new GameOverState());
-            gameStateManager.AddGameState("WinState", new WinState());
-            GameStateManager.SwitchTo("StartScreenState");
-            GameStateManager.SwitchTo("StoryState");
+            //This allows you to switch between different states of the game, you could for example use it for levels.
+            GameStateManager.SwitchTo("PlayingState");
 
             base.LoadContent();
         }

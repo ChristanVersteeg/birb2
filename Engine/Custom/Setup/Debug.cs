@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using BaseProject.Engine;
-using BaseProject.GameObjects.SpriteGameObjects;
 using BaseProject.GameStates;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
